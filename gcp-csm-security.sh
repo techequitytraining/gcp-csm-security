@@ -1249,7 +1249,7 @@ elif [ $MODE -eq 2 ]; then
     echo "$ export LBIP=\$(gcloud --project $GCP_PROJECT compute addresses list --filter \"NAME:${APPLICATION_NAME}-iap-global-ip\" --format=\"value(address)\")  # to get load balancer IP" | pv -qL 100
     export LBIP=$(gcloud --project $GCP_PROJECT compute addresses list --filter "NAME:${APPLICATION_NAME}-iap-global-ip" --format="value(address)") > /dev/null 2>&1 # to get external static IP address
     export MANAGED_STATUS=$(gcloud compute ssl-certificates list --filter="managed.domains:${LBIP}.nip.io" --format 'value(MANAGED_STATUS)')
-    while [[ "$MANAGED_STATUS" != "ACTIVE" ]]; do
+    while [[ ! "$MANAGED_STATUS" =~ ACTIVE ]]; do
         sleep 30
         echo
         echo "*** Managed SSL certificate status is $MANAGED_STATUS ***"
