@@ -1,4 +1,4 @@
-# Google Cloud Service Mesh Security Features Demo
+# Google Cloud Service Mesh Security Demo Script
 
 ## 🛡️ Explore Comprehensive Security with Cloud Service Mesh and Integrated Google Cloud Security Tools
 
