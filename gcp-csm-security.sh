@@ -81,7 +81,6 @@ cat<<EOF
 Explore Hipster Shop Microservices Application using ASM 
 ----------------------------------------------------------------
 Please enter number to select your choice:
- (0) Switch between Preview, Create and Delete modes
  (1) Install tools
  (2) Enable APIs
  (3) Create GKE cluster
