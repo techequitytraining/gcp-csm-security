@@ -63,7 +63,7 @@ export GCP_PROJECT=$GCP_PROJECT
 export GCP_REGION=europe-west4
 export GCP_ZONE=europe-west4-b
 export GCP_CLUSTER=gcp-gke-cluster
-export ASM_VERSION=1.22.4-asm.0
+export ASM_VERSION=1.23.2-asm.2
 export ASM_INSTALL_SCRIPT_VERSION=1.22
 EOF
 source $PROJDIR/.env
